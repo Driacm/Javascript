@@ -16,7 +16,7 @@ const contagemRegressiva = (dataFutura) => {
     }
 }
 const atualizarTemporizador = () => {
-    const dataFutura = new Date ('2024-11-30T12:00:00').getTime();
+    const dataFutura = new Date ('2024-12-31T23:59:59').getTime();
     const tempoRestante = contagemRegressiva (dataFutura);
 
     document.getElementById ('dias').innerText = `Dias ${tempoRestante.dias}`
