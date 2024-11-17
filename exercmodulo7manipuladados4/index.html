@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feed de Postagens</title>
+  <style>
+    /* Estilo básico */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Formulário para postagens */
+.post-form {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Feed de postagens */
+#feed {
+  margin-top: 120px; /* Para não cobrir o formulário fixo */
+  padding: 20px;
+}
+
+#postList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-item {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.post-item img {
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.post-text {
+  flex: 1;
+}
+
+.post-meta {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.like-button {
+  background-color: #ffcb00;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.like-button:hover {
+  background-color: #e0a700;
+}
+
+.like-count {
+  font-size: 14px;
+  color: #777;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Formulário de postagem -->
+  <div class="post-form">
+    <textarea id="postText" placeholder="O que você está pensando?" rows="4" cols="50"></textarea>
+    <button id="postButton">Postar</button>
+  </div>
+
+  <!-- Feed de postagens -->
+  <div id="feed">
+    <h2>Feed de Postagens</h2>
+    <ul id="postList"></ul>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

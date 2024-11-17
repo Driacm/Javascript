@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Curtir com LocalStorage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Curta esta página</h1>
+  
+  <label for="nome">Digite seu nome: </label>
+  <input type="text" id="nome" placeholder="Nome">
+  <button id="curtir">Curtir</button>
+  <button id="limpar">Limpar</button>
+  
+  <p id="lista-curtidas">Ninguém curtiu</p>
+  
+  <script src="./index.js"></script>
+</body>
+</html>

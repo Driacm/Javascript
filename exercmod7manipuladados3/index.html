@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Busca de Usuários no GitHub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+    }
+    img {
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Busca de Usuários no GitHub</h1>
+  
+  <label for="search">Digite o nome de usuário: </label>
+  <input type="text" id="search" placeholder="Ex: octocat">
+  <button id="searchBtn">Buscar</button>
+
+  <h2>Resultados da Busca</h2>
+  <p id="message"></p>
+  <ul id="userList"></ul>
+
+  <script src="./index.js"></script>
+</body>
+</html>
